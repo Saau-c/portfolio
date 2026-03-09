@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4e40554805.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Name.jpg" width="300" height="70" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publication">Publication</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI/ML Researcher | Software Developer</p>
+                <h1>Hi, I am <span>Sakshi Chaudhari</span>!</h1>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/aboutme2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a computer science graduate with a strong interest in software development and experience in building full-stack applications and data-driven systems. I have worked on academic, freelance, and 
+                        internship projects involving web development, AI/ML, and computer vision, including international research exposure. I enjoy developing practical solutions, collaborating in teams, and continuously 
+                        improving my technical and problem-solving skills.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>Python, Java</li><br>
+                                <li><span>AI ML</span><br> Object Detection, Classification, Neural Networks, OpenCV, Chatbots</li><br>
+                                <li><span>Data Science</span><br> Data Mining, NumPy, Pandas, Matplotlib, Data Processing</li><br>
+                                <li><span>Web Development</span><br> HTML, SQL, JavaScript, CSS, MERN</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Research Intern | National Chung Cheng University, Taiwan | May 2024 – Sep 2024</span><br>
+                                <pre>- TEEP scholarship for a 22-week international internship under Prof. Hsiang-Chen Wang.
+- Researched hyperspectral imaging with AI for melanoma diagnosis; built/evaluated YOLOv10,
+Faster R-CNN, and Scaled YOLOv4 models demonstrating SAVE’s superiority over WLI; published
+research paper</pre></li><br>
+                                <li><span>Project Management & Market Research Intern | ChipReady.org | Sep 2024 – Oct 2024</span><br>
+                                <pre>- Contributed to a $1.5M semiconductor e-learning project, focusing on curriculum design and
+market research, gaining experience in project management and curriculum development.</pre></li><br>
+                                <li><span>Freelance Web Developer | 2022 – Present</span><br></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Sanjivani College of Engineering, Kopargaon</span><br>B.Tech in Computer Science | CGPA: 8.2 | 2021 – 2025<br>Honors in Artificial Intelligence & Machine Learning | CGPA: 8.3 | 2021 – 2025</li><br>
+                                <li><span>Sanjivani Junior College, Kopargaon</span><br> Higher Secondary Education | Score: 87.33% | 2019 – 2021</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="languages">
+                            <ul>
+                                <li><span>Japanese</span><br>N4 Level <a href = "https://drive.google.com/file/d/1jWFZdbh89uFM_80sT2t0ju8RnXzE1tmE/view?usp=sharing">(Certificate)</a></href></li><br>
+                                <li><span>English</span><br> Fluent</li><br>
+                                <li><span>Hindi</span><br> Fluent</li><br>
+                                <li><span>Marathi</span><br> Fluent</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>RunErrand</h2><br>
+                    <p>Full-stack react app for on-demand task assistance with Firebase authentication, role-based login, task
+posting/acceptance, and progress tracking</p>
+                </div>
+
+                <div>
+                    <h2>Hybrid Intrusion Detection System</h2><br>
+                    <p>Hybrid IDS combining anomaly-based and signature-based detection using Decision Tree, Naive
+Bayes, KNN, and a voting classifier.</p>
+                </div>
+
+                <div>
+                    <h2>Skin Cancer Detection</h2><br>
+                    <p>Compared SAVE vs WLI datasets using 5+ ML models, confirming SAVE’s superior performance for
+melanoma diagnosis.</p>
+                </div>
+
+                <div>
+                    <h2>Dimension Detection</h2><br>
+                    <p>Sponsored project using OpenCV to detect object dimensions in real time.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Publication-->
+    <div id="publication">
+        <div class="container">
+            <h1 class="sub-title">Paper Publication</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/mdpiii.png">
+                    <div class="layer">
+                        <h3>Assessing the Efficacy of the Spectrum-Aided Vision Enhancer (SAVE) to Detect Acral Lentiginous Melanoma, 
+                            Melanoma In Situ, Nodular Melanoma, and Superficial Spreading Melanoma: Part II</h3>
+                        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11941011/">Read the Paper</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--COntact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>saakshi.chaudhari14@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8788488793</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sakshi-chaudhari-707b95249/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="Images/Sakshi_Chaudhari_Resume_0.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn1 btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-solid fa-copyright"></i> Sakshi C.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyRA831DpmVhkHpVH3inKN5BHaMuIBqP9APRQMmS0JFRkQZZeDH-sjKo56ld6CPQpGI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
